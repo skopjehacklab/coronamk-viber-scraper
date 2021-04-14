@@ -13,14 +13,24 @@ jobs:
   scrape:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+    - name: checkout main
+      uses: actions/checkout@v2
+      with:
+        path: main
+
+    - name: checkout gh-pages
+      uses: actions/checkout@v2
+      with:
+        path: gh-pages
+        ref: gh-pages
 
     - name: install
-      run: pip install .
+      run: pip install main/
 
     - name: scrape
       run: |
-        coronamk-viber-scrapper --help
+        mkdir _output
+        coronamk-viber-scrapper sync -o _output/messages.json
 
     - name: push to gh-pages
       uses: peaceiris/actions-gh-pages@v3

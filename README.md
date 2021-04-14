@@ -1,5 +1,6 @@
 # `Корона Вибер скрејпер`
-Скрипта за влечење податоци од Коронавирус МК Viber групата
+Скрипта за влечење податоци од
+[Коронавирус МК Viber групата](https://invite.viber.com/?g2=AQAopiALaleJhEtjCYM/OoPTeFLG4qXUriyvsAsT8K5jFiORNcASU32/rO6IpHCf)
 
 ## Употреба
 ```
