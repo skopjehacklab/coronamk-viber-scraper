@@ -30,7 +30,7 @@ jobs:
     - name: scrape
       run: |
         mkdir _output
-        coronamk-viber-scrapper sync -o _output/messages.json
+        coronamk-viber-scrapper sync --infile gh-pages/messages.json --output _output/messages.json
 
     - name: push to gh-pages
       uses: peaceiris/actions-gh-pages@v3
