@@ -4,7 +4,7 @@
 
 ## Употреба
 ```
-python -m coronamk_viber_scrapper --help
+python -m coronamk_viber_scraper --help
 ```
 
 ## Инсталација за развој
@@ -12,4 +12,4 @@ python -m coronamk_viber_scrapper --help
 ```
 pip install -e .
 ```
-Потоа, скриптата е достапна како `coronamk-viber-scrapper`.
+Потоа, скриптата е достапна како `coronamk-viber-scraper`.
